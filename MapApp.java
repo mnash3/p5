@@ -62,7 +62,7 @@ public class MapApp {
 		try {
 			NavigationGraph graph = createNavigationGraphFromMapFile(locationFileName);
 			MapApp appInstance = new MapApp(graph);
-// TODO			appInstance.startService();
+			appInstance.startService();
 
 		} catch (FileNotFoundException e) {
 			System.out.println("GRAPH FILE: " + locationFileName + " was not found.");
