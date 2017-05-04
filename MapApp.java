@@ -3,10 +3,10 @@
 // PROJECT:          p5
 // FILE:             MapApp.java
 //
-// TEAM:    Team 108
+// TEAM:    Team 196
 // Authors: 
-// Author1: Mickey Nash,mnash3@wisc.edu,mnash3,002
-// Author2: Aseel
+// Author1: (Mickey Nash,mnash3@wisc.edu,mnash3,002)
+// Author2: (Aseel Albeshri,albeshri@wisc.edu,albeshri,lecture 02)
 //
 // ---------------- OTHER ASSISTANCE CREDITS 
 // Persons: Identify persons by name, relationship to you, and email. 
