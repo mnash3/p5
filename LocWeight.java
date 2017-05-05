@@ -6,7 +6,7 @@
 // Author1: (Aseel Albeshri,albeshri@wisc.edu,albeshri,lecture 02)
 // Author2: (Mickey Nash,mnash3@wisc.edu,mnash3,lecture002)
 
-public class LocWeight implements Comparable<LocWeight>{
+ class LocWeight implements Comparable<LocWeight>{
 	private Location location;
 	private double weight;
 	public LocWeight (Location location, double weight) {
