@@ -187,19 +187,26 @@ public class NavigationGraph implements GraphADT<Location, Path> {
 
 				}
 
-
-
-
 			}
-
-
-
-
+			
+			
 
 
 		}
+		
+		ArrayList<Path> path = new ArrayList<Path>();
+		
+		Location curr1 = dest;
+		while (pre[locations.indexOf(curr1)] != null) {
+			path.add(getEdgeIfExists(pre[locations.indexOf(curr1)], curr1));
+			curr1 = pre[locations.indexOf(curr1)];
+		}
+		
+		for (int i = path.size() - 1; i >= 0; i--)
+			path.add(path.remove(i));
 
-		return null;
+
+		return path;
 	}
 
 	/**
@@ -209,8 +216,19 @@ public class NavigationGraph implements GraphADT<Location, Path> {
 	 */
 	@Override
 	public String[] getEdgePropertyNames() {
-		// TODO Auto-generated method stub
 		return edgePropertyNames;
+	}
+	
+	@Override
+	public String toString() {
+		String path = "";
+	for (int i = 0; i < paths.size(); i ++) {
+		for (int j = 0; j < paths.get(i).size(); j++)
+			path += paths.get(i).get(j) + ", ";
+		path += "\n";
+	}
+	return path;
+		
 	}
 
 }
